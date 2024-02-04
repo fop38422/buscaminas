@@ -4,16 +4,28 @@ body {
     text-align: center;
 }
 
+#pagina {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tercio {
+    width: 30%;
+}
+
+#izq {
+    font-size: x-large;
+}
+
 #superior {
     margin: auto;
-    width: 500px;
+    width: 430px;
     font-size: 3vw;
     color: rgb(201, 0, 0);
     display: flex;
     justify-content: space-between;
     background-color: #7e7e7e;
-    border-style: groove;
-    border-color: #5a5a5a;
+    border: 10px groove #5a5a5a;
 }
 
 #superior p {
@@ -22,12 +34,31 @@ body {
     font-family: 'LCD';
 }
 
+#reset {
+    font-size: 2vw;
+    background-color: #7e7e7e;
+    border: 3px groove #5a5a5a;
+}
+
 #panel {
     margin: auto;
-    height: 500px;
-    width: 500px;
-    border-style: groove;
-    border-color: #5a5a5a;
+    height: 430px;
+    width: 430px;
+    border: 10px groove #5a5a5a;
     display: flex;
     flex-wrap: wrap; /*permite seguir rellenando por abajo cuando no se pueden meter más cosas en una fila*/
+}
+
+#panel div {
+    height: 41px;
+    width: 41px;
+    border: 1px solid #3f3f3f;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click {
+    background-color: #7e7e7e;
 }
